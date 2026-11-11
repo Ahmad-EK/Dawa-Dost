@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="blisterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <radialGradient id="foilBubble" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#64748B" />
+    </radialGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F8FAFC" />
+
+  <!-- Blister Strip Container -->
+  <rect x="50" y="40" width="500" height="320" rx="20" fill="url(#blisterBg)" stroke="#64748B" stroke-width="3" filter="url(#dropShadow)" />
+
+  <!-- Foil Grid Texture -->
+  <line x1="50" y1="200" x2="550" y2="200" stroke="#94A3B8" stroke-dasharray="6,6" stroke-width="2" />
+  <line x1="150" y1="40" x2="150" y2="360" stroke="#94A3B8" stroke-dasharray="6,6" stroke-width="2" />
+  <line x1="250" y1="40" x2="250" y2="360" stroke="#94A3B8" stroke-dasharray="6,6" stroke-width="2" />
+  <line x1="350" y1="40" x2="350" y2="360" stroke="#94A3B8" stroke-dasharray="6,6" stroke-width="2" />
+  <line x1="450" y1="40" x2="450" y2="360" stroke="#94A3B8" stroke-dasharray="6,6" stroke-width="2" />
+
+  <!-- Tablets (Foil Bubbles) Row 1 -->
+  <circle cx="100" cy="120" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="200" cy="120" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="300" cy="120" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="400" cy="120" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="500" cy="120" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+
+  <!-- Tablets Row 2 -->
+  <circle cx="100" cy="280" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="200" cy="280" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="300" cy="280" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="400" cy="280" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+  <circle cx="500" cy="280" r="38" fill="url(#foilBubble)" stroke="#475569" stroke-width="1.5" />
+
+  <!-- Branding Badge Overlay -->
+  <rect x="180" y="165" width="240" height="70" rx="10" fill="#0284C7" stroke="#0369A1" stroke-width="2" />
+  <text x="300" y="198" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">PANADOL</text>
+  <text x="300" y="222" font-family="Arial, sans-serif" font-weight="600" font-size="14" fill="#E0F2FE" text-anchor="middle">Paracetamol 500 mg</text>
+
+  <!-- Urdu Text on packaging -->
+  <text x="520" y="75" font-family="'Noto Nastaliq Urdu', Tahoma, sans-serif" font-size="18" fill="#1E293B" text-anchor="end">پیناڈول 500 ملی گرام</text>
+  <text x="80" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#334155">GSK Pakistan</text>
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Reg No. 000123 • Batch No. PK-9042 • Exp: 12/2028</text>
+</svg>

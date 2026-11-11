@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>دوا دوست (Dawa Dost) — آپ کا میڈیسن ساتھی</title>
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%232E5A44%22/><text y=%2268%22 x=%2250%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22>💊</text></svg>">
+  
+  <!-- Google Fonts: Noto Nastaliq Urdu & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body dir="rtl">
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      
+      <!-- Brand Logo & Title -->
+      <a class="brand-badge" onclick="navigateTo('home')" role="button" tabindex="0">
+        <div class="brand-logo-icon">
+          🌿
+        </div>
+        <div class="brand-titles">
+          <span class="brand-title-urdu" id="brand-title-text">دوا دوست</span>
+          <span class="brand-subtitle" id="brand-subtitle-text">Dawa Dost • Healthcare Companion</span>
+        </div>
+      </a>
+
+      <!-- Right Controls: Profile Pill & Language Selector -->
+      <div class="nav-actions">
+        
+        <!-- Active Patient Profile Pill -->
+        <button class="profile-pill-btn" onclick="openProfileModal()" title="مریض یا خاندان کا فرد منتخب کریں" aria-label="Select patient profile">
+          <span class="profile-avatar-circle">👤</span>
+          <span id="profile-pill-name">حاجی عبد الرحمٰن</span>
+          <span style="font-size: 11px; opacity: 0.6;">▼</span>
+        </button>
+
+        <!-- Language Switcher Button (Urdu / English) -->
+        <button class="lang-toggle-btn" onclick="toggleLanguage()" title="Switch Language" aria-label="Switch Language">
+          <span>🌐</span>
+          <span id="lang-btn-text">English</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Permanent Medical Safety Disclaimer Banner (Mandatory Requirement) -->
+  <aside class="permanent-disclaimer" role="note" aria-label="Medical disclaimer">
+    <span>🛡️</span>
+    <span id="top-disclaimer-text">یہ معلومات AI کی مدد سے دی گئی ہیں، ڈاکٹر کے مشورے کا متبادل نہیں۔</span>
+  </aside>
+
+  <!-- Main Application Dynamic Content Container -->
+  <main class="app-container" id="main-content">
+    <!-- Populated dynamically by app.js -->
+  </main>
+
+  <!-- Health Profile & Family Member Management Modal -->
+  <div id="profile-modal" class="modal-overlay" style="display: none;" onclick="if(event.target === this) closeModal()">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title-text">خاندانی ہیلتھ پروفائل</h3>
+        <button class="modal-close-btn" onclick="closeModal()" title="بند کریں" aria-label="Close dialog">×</button>
+      </div>
+      <div id="modal-body-content">
+        <!-- Rendered dynamically -->
+      </div>
+      <div style="margin-top: 24px; text-align: left;">
+        <button class="back-btn" onclick="closeModal()">
+          بند کریں (Close)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="arinacBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="50%" stop-color="#C2410C" />
+      <stop offset="100%" stop-color="#9A3412" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="400" fill="#FFF7ED" />
+
+  <!-- Box -->
+  <rect x="50" y="40" width="500" height="320" rx="16" fill="url(#arinacBg)" stroke="#7C2D12" stroke-width="3" filter="url(#shadow)" />
+
+  <rect x="70" y="60" width="460" height="90" rx="10" fill="#FFFFFF" />
+  <text x="300" y="115" font-family="Arial Black, Impact, sans-serif" font-size="42" fill="#C2410C" text-anchor="middle" letter-spacing="3">ARINAC FORTE</text>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#431407" text-anchor="middle">Ibuprofen 400 mg + Pseudoephedrine HCl 60 mg</text>
+
+  <!-- Urdu label -->
+  <text x="500" y="210" font-family="'Noto Nastaliq Urdu', Tahoma, sans-serif" font-size="24" fill="#FEF08A" text-anchor="end">ایرینیک فورٹ گولیاں</text>
+  <text x="500" y="250" font-family="'Noto Nastaliq Urdu', Tahoma, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="end">شدید نزلہ، زکام، سر درد اور بخار کے لیے</text>
+
+  <!-- High BP Warning on box -->
+  <rect x="70" y="275" width="460" height="60" rx="8" fill="#7F1D1D" stroke="#EF4444" stroke-width="1.5" />
+  <text x="85" y="300" font-family="Arial, sans-serif" font-weight="bold" font-size="13" fill="#FCA5A5">WARNING: Not for patients with High Blood Pressure or Heart Disease</text>
+  <text x="85" y="322" font-family="'Noto Nastaliq Urdu', sans-serif" font-size="13" fill="#FEE2E2">انتباہ: ہائی بلڈ پریشر اور امراضِ قلب کے مریض ہرگز استعمال نہ کریں</text>
+</svg>

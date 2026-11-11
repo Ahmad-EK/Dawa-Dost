@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sample-rx-1",
+    "title_ur": "ڈاکٹر کا نسخہ (آگمنٹین + پیناڈول)",
+    "title_en": "Doctor's Prescription (Augmentin + Panadol)",
+    "description_ur": "لاہور کے کلینک کا نسخہ، جس میں اینٹی بائیوٹک آگمنٹین لکھی گئی ہے",
+    "description_en": "Handwritten clinic prescription with Tab. Augmentin 625mg BD",
+    "filename": "prescription_augmentin.svg",
+    "type": "prescription"
+  },
+  {
+    "id": "sample-med-1",
+    "title_ur": "پیناڈول 500 ملی گرام (بلیسٹر پیک)",
+    "title_en": "Panadol 500mg (Blister Strip)",
+    "description_ur": "پاکستان میں سر درد اور بخار کی عام دوا",
+    "description_en": "Standard blister strip of Paracetamol 500mg",
+    "filename": "panadol_500mg.svg",
+    "type": "medicine"
+  },
+  {
+    "id": "sample-med-2",
+    "title_ur": "ایرینیک فورٹ (نزلہ زکام کی دوا)",
+    "title_en": "Arinac Forte (Cold & Flu)",
+    "description_ur": "ہائی بلڈ پریشر کے مریضوں کے لیے خطرناک تعامل کا ٹیسٹ",
+    "description_en": "Ibuprofen + Pseudoephedrine (Contraindicated in Hypertension)",
+    "filename": "arinac_pack.svg",
+    "type": "medicine"
+  }
+]
